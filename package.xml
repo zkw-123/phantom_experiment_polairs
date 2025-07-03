@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>polaris_ultrasound</name>
+  <version>0.1.0</version>
+  <description>ROS 2包，用于集成Polaris跟踪器和超声成像</description>
+  <maintainer email="user@example.com">user</maintainer>
+  <license>MIT</license>
+  
+  <!-- 添加这些构建工具依赖 -->
+
+  <buildtool_depend>ament_python</buildtool_depend>
+  
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>tf2_ros</depend>
+  <depend>cv_bridge</depend>
+  <exec_depend>python3-opencv</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
